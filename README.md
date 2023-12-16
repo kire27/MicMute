@@ -4,14 +4,15 @@ MicMute is a small program created in **AutoHotKey** language.
 <br>
 It can mute and unmute microphone with keybindings
 
-## Steps to install program
+## Download
 
-1. Download files from repository
+1. Download release files
 2. Download [AudioHotKey](https://www.autohotkey.com/)
 3. Run file `audio info.ahk` to get your microphone id
 	> In the list of audio devices. You can find your microphone by changing volume its volume.
-4. Open file `MicMute.ahk` and replace `micId` with your microphone id.
-5. Now you can run the program through **.ahk** file or create an **.exe** file with **AutoHotKey** GUI.
+4. Open file `micID.txt` in the src folder and write your microphone id.
+	> The `micID.txt` file cannot contain any letters or additional spaces. 
+5. Run the program `MicMute.exe`.
 
 ## Controls
 
