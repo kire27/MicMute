@@ -16,3 +16,10 @@ It can mute and unmute microphone with keybindings
 ## Controls
 
 Press **RControl** & **AppsKey** to turn on or off your microphone.
+
+## Resources 
+
+- [Get current directory](https://www.autohotkey.com/boards/viewtopic.php?t=69925)
+- [The SoundCardAnalysis script to figure out where your mic is](https://www.autohotkey.com/docs/commands/SoundSet.htm#Ex)
+- [Write up by KraZe_EyE Inspired by code seen in DirMenu.ahk](http://www.autohotkey.com/board/topic/91109-favorite-folders-popup-menu-with-gui/)
+- [How to give your scripts unique icons in the windows tray!](https://www.autohotkey.com/board/topic/121982-how-to-give-your-scripts-unique-icons-in-the-windows-tray/)
