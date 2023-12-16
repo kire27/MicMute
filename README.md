@@ -8,7 +8,7 @@ It can mute and unmute microphone with keybindings
 
 1. Download release files
 2. Download [AudioHotKey](https://www.autohotkey.com/)
-3. Run file `audio info.ahk` to get your microphone id
+3. Run file `audio_info.exe` to get your microphone id
 	> In the list of audio devices. You can find your microphone by changing volume its volume.
 4. Open file `micID.txt` in the src folder and write your microphone id.
 	> The `micID.txt` file cannot contain any letters or additional spaces. 
