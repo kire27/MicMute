@@ -4,6 +4,10 @@ SendMode Input		; Recommended for new scripts due to its superior speed and reli
 scriptDir := A_ScriptDir
 SetWorkingDir %scriptDir%		; Ensures a consistent starting directory.
 
+errorMicIdGeneric := "Error occured while getting your microphone ID!"
+errorMicIdUnsupported := "Error! ""micID.txt"" file contains other characters than numbers!"
+errorMissingFile := "File does not exist!"
+
 ; if path doesn't lead to 'src' folder, append '\src' to path
 workingPath := SubStr(scriptDir, -2) != "src" ? scriptDir "\src" : scriptDir
 iconPath_on := workingPath "\icon\mic_icon1.png"
@@ -15,7 +19,9 @@ micIdPath := workingPath "\micID.txt"
 FileRead, micId, %micIdPath%
 
 if ErrorLevel
-	msgbox "Error occured while getting your microphone ID!"`n`n "Path not recognized"
+	msgbox, %errorMicIdGeneric%`n%errorMissingFile%
+if micId is not number
+	msgbox, %errorMicIdUnsupported%
 
 SoundSet, 1, MASTER:1, MUTE, micId		; Turn off mic on start
 SoundGet, MM, MASTER:1, MUTE, micId		; Component type, Mixer number
