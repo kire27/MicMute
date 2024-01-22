@@ -20,7 +20,7 @@ FileRead, micId, %micIdPath%
 
 if ErrorLevel
 	msgbox, %errorMicIdGeneric%`n%errorMissingFile%
-if micId is not number
+else if micId is not number
 	msgbox, %errorMicIdUnsupported%
 
 SoundSet, 1, MASTER:1, MUTE, micId		; Turn off mic on start
